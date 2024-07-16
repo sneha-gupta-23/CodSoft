@@ -1,21 +1,21 @@
-def add(x, y):
-    return x + y
+def add(a, b):
+    return a + b
 
-def subtract(x, y):
-    return x - y
+def subtract(a, b):
+    return a - b
 
-def multiply(x, y):
-    return x * y
+def multiply(a, b):
+    return a * b
 
-def divide(x, y):
-    if y == 0:
+def divide(a, b):
+    if b == 0:
         return "Error! Division by zero."
     else:
-        return x / y
+        return a / b
 
 def main():
-    print("Simple Calculator")
-    print("Select operation:")
+    print("\t *****Simple Calculator*****")
+    print("\nSelect operation:")
     print("1. Add")
     print("2. Subtract")
     print("3. Multiply")
@@ -41,8 +41,8 @@ def main():
             elif choice == '4':
                 print(f"{num1} / {num2} = {divide(num1, num2)}")
 
-            next_calculation = input("Do you want to perform another calculation? (yes/no): ")
-            if next_calculation.lower() != 'yes':
+            next_calculation = input("Do you want to perform another calculation? (y/n): ")
+            if next_calculation.lower() != 'y':
                 break
         else:
             print("Invalid choice. Please select a valid operation.")
